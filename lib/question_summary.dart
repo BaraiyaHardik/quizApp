@@ -20,7 +20,7 @@ class QuestionSummary extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.all(15),
                     child: CircleAvatar(
-                      backgroundColor: Colors.pinkAccent,
+                      backgroundColor: data ['correct_answer']  == data ['user_answer'] ? Colors.blue : Colors.pinkAccent,
 
                       radius: 25,
                       child: Text(
